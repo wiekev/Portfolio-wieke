@@ -8,8 +8,10 @@ let cmd = document.querySelector("main section:first-of-type article:nth-of-type
 let textcmd = document.querySelector("main section:nth-of-type(2) article:nth-of-type(4)")
 let pieternieuwland = document.querySelector("main section:first-of-type article:nth-of-type(5)")
 let textPieternieuwland = document.querySelector("main section:nth-of-type(2) article:nth-of-type(5)")
-let vroeger = document.querySelector("main section:first-of-type article:nth-of-type(6)")
-let textvroeger = document.querySelector("main section:nth-of-type(2) article:nth-of-type(6)")
+let minor = document.querySelector("main section:first-of-type article:nth-of-type(6)")
+let textminor = document.querySelector("main section:nth-of-type(2) article:nth-of-type(6)")
+let vroeger = document.querySelector("main section:first-of-type article:nth-of-type(7)")
+let textvroeger = document.querySelector("main section:nth-of-type(2) article:nth-of-type(7)")
 
 
 function textPNCZichbaar() {
@@ -90,4 +92,13 @@ cmd.onmouseout = textCMDOntzichtbaar;
 
 
 
+function textminorZichtbaar() {
+    textminor.style.display = "block";
+}
 
+function textminorOntzichtbaar() {
+    textminor.style.display = "none";
+}
+
+minor.onmouseover = textminorZichtbaar;
+minor.onmouseout = textminorOntzichtbaar;
